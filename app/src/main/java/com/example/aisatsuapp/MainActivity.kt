@@ -7,8 +7,6 @@ import android.util.Log
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 
-//class MainActivity : AppCompatActivity() {
-
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,9 +16,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         button1.setOnClickListener(this)
     }
     override fun onClick(v: View) {
-        if (v.id == R.id.button1) {
             showTimePickerDialog()
-        }
     }
     private fun showTimePickerDialog() {
         val timePickerDialog = TimePickerDialog(
